@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <p id="result1"></p>
+  <label>Name</label>
+  <input type="text" id="name_inp"><br><br>
+
+  <label>Email</label>
+  <input type="email" id="email_inp"><br><br>
+
+  <label>Password</label>
+  <input type="text" id="password_inp"><br><br>
+
+  <label>Position</label>
+  <select id="position_inp">
+    <option value="student">Student</option>
+    <option value="teacher">teacher</option>
+    <option value="professional">Professional</option>
+    <option value="childen">Childen</option>
+  </select><br><br>
+
+  <label>Have girl/boy friend: </label>
+  <select id="status_inp">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select><br><br>
+<!---->
+  <label>Phone number: </label>
+  <input type="text" id="num_inp"><br><br>
+  
+  <button id="add_data">TAO DATA MOI</button>
+  <button id="update_data">CAP NHAT DATA</button>
+  <button id="del_data">XOA DATA</button>
+  <button id="print_data">IN DATA</button><br><br>
+  
+  <div id="display_data"></div><br><br>  
+<!---->
+  <label>Find user: </label>
+  <input type="text" id="find_num" placeholder="Enter the phone number">
+  
+  <button id="find_user">FIND DATA</button><br><br>
+  
+  <div id="find_user_display"></div><br><br>
+<!---->
+
+  <label>Image Name</label> <input type="text" id="namebox"> <label id="extlab"></label><br><br>
+  <img id="myimg"><label id="progress"></label><br><br>
+
+  <button id="SIB">Select Image</button>
+  <button id="UIB">Upload Image</button>
+  <button id="RIB">Retrieve Image</button>
+</body>
+</html>

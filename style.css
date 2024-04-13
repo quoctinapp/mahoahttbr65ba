@@ -1,0 +1,20 @@
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+
+.node{
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid red;
+    width: max-content;
+    height: max-content;
+}
+.cell{
+    display: flex;
+}
+.value{
+    margin-left: 10px;
+}

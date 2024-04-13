@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: auto;
+}
+.center{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+    font-size: 25px;
+}
+.input-data{
+    background: url('pexels-pixabay-68767.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 48%;
+    height: 100vh;
+    text-align: center;
+}
+.tmp{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.input_area {
+    border-radius: 10px;
+    width: 60%;
+    height: 59px;
+    max-height: 330px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;   
+}
+
+.text_data{
+    font-weight: 600;
+    color: red;
+    font-size: 35px;
+    cursor: auto;
+}
+
+.submit_btn{
+    color: #8BD8BD;
+    font-weight: 600;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 100px;
+    height: 35px;
+    background: #243665;
+    box-shadow: #243665 0px 5px 15px;
+    cursor: pointer;
+}
+
+#file-upload::-webkit-file-upload-button{
+    border-radius: 20px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: red;
+}
+
+.display{
+    width: 48%;
+    height: 100vh;
+    background: url('pexels-jeremy-bishop-2397651.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    padding: 40px;    
+}
+
+.notification-pre{
+    z-index: 100;
+    font-size: 30px;
+    cursor: pointer;
+    color: yellow;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    top: 3%;
+    left: 2%;
+    transition: ease-in-out 1.5s;
+}
+.notification{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 100;
+    background-color: white;
+    color: black;
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    right: 20%;
+    padding: 20px;
+    font-size: 17.5px;
+    overflow: scroll;
+    transition: ease-in-out 1.5s;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+}
+header::after{
+    content: '';
+    height: 2px;
+    width: 40%;
+    background: greenyellow;
+    position: absolute;
+    left: calc(50% - 20%);
+    bottom: 0;
+}
+
+header .fa-info-circle {
+    font-size: 40px;
+    text-align: center;
+    color: red
+}
+header .fa-close {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 22%;
+    left: 21%;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    z-index: 300;
+}
+
+header span{
+    font-size: 40px;
+    color: red;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.space{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.space span:nth-child(9) {
+    color: rgba(70, 209, 0, 1);
+}
+.space a{
+    text-decoration: none;
+    color: orange;
+    cursor: pointer;  
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid red;
+}
+
+footer span{
+    text-decoration: none;
+    color: #2d8cf0;
+    cursor: pointer;
+}
+
+.notification::-webkit-scrollbar{
+    display: none;
+}

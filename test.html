@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer type="module" src="test.js"></script>
+    <link rel="stylesheet" href="test.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="center">
+        <div class="input-data">
+            <div class="tmp">
+                <span class="text_data">Nhập chuỗi cần mã hóa</span><br>
+                <textarea class="input_area" id="text_inp" placeholder="Type your string here..." required spellcheck="false" ></textarea>
+                <input id="file-upload" type="file"/>
+                <button type="submit" class="submit_btn"  id="submit">Done</button>
+            </div>     
+        </div>
+        <div class = "display">
+            <div id = "display_encode"></div>
+        </div>
+    </div>
+    <div class="notification-pre" id="pre">
+        <i class="fa fa-warning"></i> 
+    </div>
+    <div class="notification" id="after">
+        <header>
+            <i class="fa fa-info-circle"></i>
+            <span>Cách sử dụng</span>
+            <i class="fa fa-close" id="close"></i>
+        </header>
+        <div class="space">
+            <span>+ File nhập vào cần phải có định dạng đuôi là .json</span><br>
+            <span>+ Cáu trúc file bên trong cần phải theo cấu trúc là 1 json</span><br>
+            <span>+ Nhập đầy đủ file và chuỗi cần mã hóa trước khi bấm nút "Done"</span><br>
+            <span>+ File json là file cho phép bạn tùy chỉnh dữ liệu để có kết quả mã hóa theo ý riêng</span><br>
+            <span>* Bạn có thể thao khảo file Json <a id="file_exp">Tại đây</a></span>
+        </div>
+        <footer>
+            <span><a id="info_dev">Developed by: Quoc Tin Ly Tran</a></span>
+        </footer>
+    </div>
+</body>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>
+
