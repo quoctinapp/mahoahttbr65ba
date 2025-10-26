@@ -2,13 +2,13 @@ import {initializeApp} from "https://www.gstatic.com/firebasejs/10.3.0/firebase-
 import {getDatabase, ref, child, get, set, update, remove} from "https://www.gstatic.com/firebasejs/10.3.0/firebase-database.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBYbY0ANxyvkY0d45uxBYUYnMrqDeKlf18",
-  authDomain: "sock-khkt-2023-2024.firebaseapp.com",
-  projectId: "sock-khkt-2023-2024",
-  storageBucket: "sock-khkt-2023-2024.appspot.com",
-  messagingSenderId: "799639384657",
-  appId: "1:799639384657:web:ce7f2491b8e6af6b0cfe70",
-  measurementId: "G-L9TMRSGQY9"
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN_LINK",
+  projectId: "YOU_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID",
+  measurementId: "YOUR_MEASUREMENT_ID"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -311,3 +311,4 @@ Downbtn.onclick = function () {
     alert("Please provide a name before retrieving the image.");
   }
 };
+
